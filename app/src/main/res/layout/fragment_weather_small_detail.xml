@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/firstLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/v_weatherIcon"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:contentDescription="@string/l_weather_icon"
+                android:src="@drawable/na" />
+
+            <TextView
+                android:id="@+id/v_description"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:text="@string/l_condition"
+                android:textColor="@android:color/holo_orange_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/v_highTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingRight="16dp"
+                android:text="@string/l_highTemp"
+                android:textColor="@android:color/holo_orange_light" />
+
+            <TextView
+                android:id="@+id/v_lowTemp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1.08"
+                android:text="@string/l_lowTemp"
+                android:textColor="@android:color/holo_orange_light" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/v_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:paddingBottom="15dp"
+            android:singleLine="true"
+            android:text="@string/l_temp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textIsSelectable="false"
+            android:textSize="100dp" />
+    </LinearLayout>
+
+</FrameLayout>

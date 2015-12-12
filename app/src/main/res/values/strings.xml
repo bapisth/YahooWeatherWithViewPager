@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Weather</string>
+    <string name="action_settings">Settings</string>
+    <string name="l_lowTemp">Low</string>
+    <string name="l_highTemp">High</string>
+    <string name="l_desc">Description</string>
+    <string name="l_temp">00</string>
+    <string name="l_day">Day</string>
+    <string name="l_weatherType">weather</string>
+    <string name="l_tabForecast">Forecast</string>
+    <string name="l_tabPrecipitation">Precipitation</string>
+    <string name="l_tabDetails">Details</string>
+    <string name="l_tabWindPressure"><![CDATA[Wind & Pressure]]></string>
+    <string name="l_tabWeather">Weather</string>
+    <string name="l_weatherLoading">Loading...</string>
+    <string name="l_weather_icon">weather_icon</string>
+    <string name="l_condition">Condition</string>
+    <string name="l_noInternetConnection">No Internet Connection. Try Again</string>
+</resources>
